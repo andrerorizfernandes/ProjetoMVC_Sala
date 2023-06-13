@@ -49,5 +49,10 @@ namespace Controller
                     NovaInstancia().
                         ProximoIdentificadorDeAluno();
         }
+
+        public static IAlunoController NovaInstancia()
+        {
+            return new AlunoController();
+        }
     }
 }

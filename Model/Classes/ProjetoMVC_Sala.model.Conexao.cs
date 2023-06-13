@@ -13,7 +13,7 @@ namespace Model
 
         public MySqlConnection ConexaoBancoDados()
         {
-            MySqlConnection con = new MySqlConnection();
+            MySqlConnection con = new MySqlConnection(STRING_CONEXAO);
             con.Open();
             return con;
         }
